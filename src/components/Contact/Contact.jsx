@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 import { MdCall } from 'react-icons/md'
 import { BsFillChatDotsFill } from 'react-icons/bs'
-import { HiChatBubbleBottomCenter } from 'react-icons/hi' 
+import { HiChatBubbleBottomCenter } from 'react-icons/hi2' 
 
 const Contact = () => {
   return (
@@ -17,16 +17,59 @@ const Contact = () => {
                 </span>
                 <div className="flexColStart contactModes">
                     {/* first row */}
-                    <div className="flexColStart row">
+                    <div className="flexStart row">
                         <div className="flexColStart mode">
                             <div className="flexStart">
                                 <div className="flexCenter icon">
                                     <MdCall size={25} />
                                 </div>
                                 <div className="flexColStart detail">
-                                    
+                                    <span className="primaryText">Call at</span>
+                                    <span className="secondaryText">021 123 145 14</span>
                                 </div>
                             </div>
+                            <div className="flexCenter button">Call now</div>
+                        </div>
+                        {/* second mode */}
+                        <div className="flexColStart mode">
+                            <div className="flexStart">
+                                <div className="flexCenter icon">
+                                    <BsFillChatDotsFill size={25} />
+                                </div>
+                                <div className="flexColStart detail">
+                                    <span className="primaryText">Text us</span>
+                                    <span className="secondaryText">021 123 145 14</span>
+                                </div>
+                            </div>
+                            <div className="flexCenter button">Text now</div>
+                        </div>
+                    </div>
+                    {/* second row */}
+                    <div className="flexStart row">
+                        <div className="flexColStart mode">
+                            <div className="flexStart">
+                                <div className="flexCenter icon">
+                                    <BsFillChatDotsFill size={25} />
+                                </div>
+                                <div className="flexColStart detail">
+                                    <span className="primaryText"> Video call at</span>
+                                    <span className="secondaryText">021 123 145 14</span>
+                                </div>
+                            </div>
+                            <div className="flexCenter button">Video call now</div>
+                        </div>
+                        {/* fourth mode */}
+                        <div className="flexColStart mode">
+                            <div className="flexStart">
+                                <div className="flexCenter icon">
+                                    <HiChatBubbleBottomCenter size={25} />
+                                </div>
+                                <div className="flexColStart detail">
+                                    <span className="primaryText">SMS</span>
+                                    <span className="secondaryText">021 123 145 14</span>
+                                </div>
+                            </div>
+                            <div className="flexCenter button">Message now</div>
                         </div>
                     </div>
                 </div>
