@@ -1,6 +1,7 @@
 .h-wrapper {
     /* background: var(--black); */
     color: white;
+    z-index: 2;
 }
 
 .h-container {
@@ -28,6 +29,7 @@
     }
 
     .h-menu {
+        z-index: 2;
         color: var(--black);
         position: absolute;
         top: 3rem;
